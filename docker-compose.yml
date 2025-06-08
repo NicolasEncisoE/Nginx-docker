@@ -1,0 +1,7 @@
+services:
+  nginx:
+    image: nginx:1.25-alpine # imagen del nginx a utilizar
+    ports:
+      - "8080:80" # puerto asignado
+    volumes:
+      - ./html:/usr/share/nginx/html:ro # volumen del contenido a servir con nginx
